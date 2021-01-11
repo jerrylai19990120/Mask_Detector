@@ -10,7 +10,7 @@ from keras.callbacks import EarlyStopping
 from cv2 import cv2
 from keras.models import load_model
 
-model = load_model('model-018.model')
+model = load_model('model-009.model')
 labels_dict = {0:"MASK", 1:"NO MASK"}
 colors_dict = {0: (0,255,0), 1:(0,0,255)}
 
