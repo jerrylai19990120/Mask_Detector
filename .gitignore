@@ -1,0 +1,8 @@
+env/
+DATA/
+coverage/
+.vscode/
+dataset/
+data.npy
+target.npy
+*.model
