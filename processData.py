@@ -6,7 +6,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Flatten, Conv2D, MaxPool2D, Dropout, Activation
 from keras.callbacks import ModelCheckpoint
 
-data_path = "./dataset"
+data_path = "dataset"
 categories = os.listdir(data_path)
 labels = [i for i in range(len(categories))]
 label_dict = dict(zip(categories, labels))

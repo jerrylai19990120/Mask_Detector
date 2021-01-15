@@ -10,8 +10,8 @@ from keras.callbacks import EarlyStopping
 from cv2 import cv2
 from keras.models import load_model
 
-model = load_model('model-009.model')
-labels_dict = {0:"MASK", 1:"NO MASK"}
+model = load_model('model-007.model')
+labels_dict = {0:"NO MASK", 1:"MASK"}
 colors_dict = {0: (0,255,0), 1:(0,0,255)}
 
 face_cascade = cv2.CascadeClassifier('DATA/haarcascades/haarcascade_frontalface_default.xml')
@@ -20,7 +20,6 @@ videoCapture = cv2.VideoCapture(0)
 while True:
     ret, frame = videoCapture.read()
 
-    
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     face_rects = face_cascade.detectMultiScale(gray, 1.3, 5)
 

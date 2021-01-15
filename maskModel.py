@@ -25,7 +25,7 @@ model.add(Dropout(0.5))
 model.add(Dense(50, activation='relu'))
 model.add(Dense(2, activation='softmax'))
 
-model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=['accuracy'])
+model.compile(loss="categorical_crossentropy", optimizer='adam', metrics=['accuracy'])
 
 train_data, test_data, train_target, test_target = train_test_split(data, target, test_size=0.1)
 
